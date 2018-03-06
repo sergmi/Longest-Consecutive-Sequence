@@ -3,9 +3,10 @@ module.exports = function longestConsecutiveLength(array) {
 	let lowToHigh = (a,b) => a - b;
 	array = array.sort(lowToHigh);
 	array_length = array.length;
-	
+
 	array.forEach(function(item,i,arr){
-		if(item+1===arr[i+1]){
+		if(item===arr[i+1]){}		
+		else if(item===arr[i+1]-1){
 			value+=1;
 		}
 		else {
